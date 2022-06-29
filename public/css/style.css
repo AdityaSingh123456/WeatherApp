@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    
+  }
+  
+  body {
+    margin-top: 60px;
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0EBE3;
+  }
+  .header form{
+    display: inline-block;
+    float: right;
+  }
+  
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color: #ffffff;
+    padding: 30px;
+    
+    font-size: 35px;
+    border-radius: 30px 30px 0px 0px;
+    height: 150px;
+  }
+  .header img{
+    margin-top: -30px;
+    margin-left: 10px;
+    border-radius: 50%;
+    
+  }
+  
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left middle middle middle middle right' 
+      'footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+    height: 500px; /*
+     Should be removed. Only for demonstration */
+    
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+    background-color: white;
+    text-align: center;
+    
+    
+    
+  }
+  .left h1{
+    font-size: 150px;
+    /* margin-left: 60px; */
+    display: inline-block;
+
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+    margin-top: -40px;
+    background-color: white;
+    background-image: url("https://img.freepik.com/free-vector/world-meteorological-day-meteorology-science-tiny-people-meteorologist-studying-researching_501813-1359.jpg?w=2000");
+    /* background-image: url("https://img.freepik.com/free-vector/meteorology-abstract-concept-vector-illustration-met-station-meteorology-program-university-degree-weather-prediction-method-measuring-instruments-atmosphere-study-abstract-metaphor_335657-1980.jpg?w=1060&t=st=1656431873~exp=1656432473~hmac=06f300976dc8064d6fcfde9c3385c4e83e86a70a9a54c2ff747762f62aa22138"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    margin-left: -40px;
+  }
+  .sunset{
+    display: inline-block;
+    background-image: url("https://i.pinimg.com/originals/78/9c/33/789c3306e7c3813963ad3ca5c237b45a.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    
+    
+  }
+  /* Style the right column */
+  .right {
+    grid-area: right;
+    background-color: white;
+  }
+  
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px ;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+.footer{
+    background-color: white;
+    margin-top: -40px;
+   
+}
+
+.textarea{
+    border: 2px solid navy;
+    border-radius: 10px;
+    height: 48px;
+    width: 200px;
+    margin-top: -10px;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+form .img{
+    border-radius: 10px;
+    margin-bottom: -17px;
+}
+
+ul{
+    margin-top: 50px;
+    list-style: none;
+}
+ul li img{
+    margin: 10px;
+    
+}
+.footer p{
+    border: 0px solid navy;
+    background-color: #3AB0FF;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 9px blueviolet;
+}
+

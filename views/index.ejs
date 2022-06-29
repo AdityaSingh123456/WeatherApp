@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather-App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="https://img.icons8.com/bubbles/100/000000/sun-man.png">
+  
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">
+      <img src="https://i.pinimg.com/originals/e9/e9/90/e9e99039ad9f8445e9b747f8e0b159ab.gif" alt="LOGO" width="200px" height="150px">
+      <form action="/" method="post">
+        <input class="textarea" type="text" name="place" value="" id="" placeholder="London">
+        <input class="img" type="image" src="https://cdn.dribbble.com/users/743528/screenshots/4615255/untitled2222.gif" alt="Submit" width="58" height="48">
+      </form>
+
+    </div>
+    
+    <div class="left">
+      <h1> <%=Temprature%><span>&#176;</span></h1>
+
+      <h4> <%= Description%> </h4>
+    
+      <hr>
+      <h2> <%= Time%> </h2>
+      <div class="sunset">
+        
+
+      </div>
+
+     
+    
+    </div>
+    <div class="middle" >
+
+    </div>  
+    <div class="right" >
+      <ul>
+        <li><img src="https://img.icons8.com/ios-glyphs/24/000000/moisture.png"/> <%=Moisture %>%</li>
+        <li><img src="https://img.icons8.com/ios-glyphs/24/000000/wind--v1.png"/> <%= Windspeed%>Km/h</li>
+        <li><img src="https://img.icons8.com/ios-glyphs/24/000000/sunrise.png"/> <%= Sunrise %>h</li>
+        <li><img src="https://img.icons8.com/ios-glyphs/24/000000/sunset.png"/> <%= Sunset %>h</li>
+        <li><img src="https://img.icons8.com/ios-glyphs/24/000000/thermometer-down.png"/> <%= Lowtemp%><span>&#176;</span> </li>
+        <li><img src="https://img.icons8.com/ios-glyphs/24/000000/thermometer-up.png"/> <%= Hightemp%><span>&#176;</span> </li>
+        <li><img src="https://img.icons8.com/ios-glyphs/24/000000/marker--v1.png"/> <%= City %></li>
+        
+      </ul>
+    </div>
+    
+    <div class="footer">
+      <p>Design and Develop by Aditya Singh with ❤️</p>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
